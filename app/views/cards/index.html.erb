@@ -1,0 +1,16 @@
+<%
+    suit = ["clubs","diamonds","hearts","spades"]
+    number = [1,2,3,4,5,6,7,8,9,10,"ace","jack","queen","king"]
+    r_suit = suit.sample
+    r_number = number.sample
+%>
+<h1>Draw a card</h1>
+<p>
+    <img src="/images/cards/<%= r_number %>_of_<%= r_suit %>.svg">
+</p>
+<p>
+    The card is <%=r_number%> of <%=r_suit%>
+</p>
+<p>
+    <a href="/cards">Draw again!</a>
+</p>
