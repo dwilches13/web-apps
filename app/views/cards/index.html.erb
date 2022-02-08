@@ -1,15 +1,34 @@
 <%
-    suit = ["clubs","diamonds","hearts","spades"]
-    number = [1,2,3,4,5,6,7,8,9,10,"ace","jack","queen","king"]
-    r_suit = suit.sample
-    r_number = number.sample
+    suits = ["clubs","diamonds","hearts","spades"]
+    ranks = [1,2,3,4,5,6,7,8,9,10,"ace","jack","queen","king"]
+
+    suit1 = suits.sample
+    rank1 = ranks.sample
+    suit2 = suits.sample
+    rank2 = ranks.sample
+    suit3 = suits.sample
+    rank3 = ranks.sample
+    suit4 = suits.sample
+    rank4 = ranks.sample
+    suit5 = suits.sample
+    rank5 = ranks.sample
 %>
-<h1>Draw a card</h1>
+
+<h1>Welcome to our casino!</h1>
+
+<ul>
+    <li><%= rank1 %> of <%suit1%></li>
+    <li><%= rank2 %> of <%suit2%></li>
+    <li><%= rank3 %> of <%suit3%></li>
+    <li><%= rank4 %> of <%suit4%></li>
+    <li><%= rank5 %> of <%suit5%></li>
+
+<p> Draw a card </p>
 <p>
-    <img src="/images/cards/<%= r_number %>_of_<%= r_suit %>.svg">
+    <img src="/images/cards/<%= r_rank %>_of_<%= r_suit %>.svg">
 </p>
 <p>
-    The card is <%=r_number%> of <%=r_suit%>
+    The card is <%=r_rank%> of <%=r_suit%>
 </p>
 <p>
     <a href="/cards">Draw again!</a>
